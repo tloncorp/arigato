@@ -1,0 +1,9 @@
+:~
+  title+'Arigato'
+  info+'AI gato commands'
+  color+0xaa.bbcc
+  version+[0 0 1]
+  license+'MIT'
+  website+'https://github.com/midsum-salrux/arigato'
+  site+/app/arigato
+==
