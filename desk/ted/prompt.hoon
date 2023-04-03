@@ -41,7 +41,6 @@
   ?~  full-file.rep  !!
   =/  body=cord  q.data.u.full-file.rep
   =/  jon=json  (need (de-json:html body))
-  ~&  (mine-json jon)
   =/  results=(list cord)  (mine-json jon)
   ?~  results  !!
   %-  pure:m
