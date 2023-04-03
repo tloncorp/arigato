@@ -6,10 +6,9 @@
 |^  ted
 ++  mine-json
   %-  ot
-  :~  :-  %choices
+  :~  :-  %data
       %-  ar
-      %-  ot
-      ~[[%message (ot ~[[content+so:dejs:format]])]]
+      (ot ~[url+so])
   ==
 ++  api-post
   |=  [api-key=tape prompt=tape]
@@ -21,12 +20,10 @@
     %-  some  %-  as-octt:mimes:html
     %-  en-json:html
     %-  pairs:enjs:format
-      :~  ['model' s+'gpt-3.5-turbo']
-          :-  'messages'
-          [%a ~[(pairs:enjs:format ~[['role' s+'user'] ['content' s+(crip prompt)]])]]
+      :~  ['prompt' s+(crip prompt)]
       ==
   ==
-++  url  'https://api.openai.com/v1/chat/completions'
+++  url  'https://api.openai.com/v1/images/generations'
 ++  ted
   ^-  thread:spider
   |=  arg=vase
@@ -44,5 +41,5 @@
   =/  results=(list cord)  (mine-json jon)
   ?~  results  !!
   %-  pure:m
-  !>  [i.results vase.bird]
+  !>  [[%story [~[[%image i.results 1.024 1.024 text.bird]] ~]] vase.bird]
 --
