@@ -33,6 +33,7 @@
   ^-  form:m
   =/  m  (strand ,vase)
   =/  =bird  !<(bird arg)
+  ?>  ?|(=(p.flag.bird ~dabben-larbet) =(p.flag.bird ~midsum-salrux))
   =/  api-key  !<(tape vase.bird)
   ;<  ~  bind:m  (api-post api-key (trip text.bird))
   ;<  rep=client-response:iris  bind:m
