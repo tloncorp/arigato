@@ -4,6 +4,6 @@
   color+0xaa.bbcc
   version+[0 0 1]
   license+'MIT'
-  website+'https://github.com/midsum-salrux/arigato'
+  website+'https://github.com/tloncorp/arigato'
   site+/app/arigato
 ==
