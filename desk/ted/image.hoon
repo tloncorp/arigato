@@ -18,7 +18,7 @@
     header-list=['Content-Type'^'application/json' 'Authorization'^(crip "Bearer {api-key}") ~]
     ^=  body
     %-  some  %-  as-octt:mimes:html
-    %-  en-json:html
+    %-  trip  %-  en:json:html
     %-  pairs:enjs:format
       :~  ['prompt' s+(crip prompt)]
       ==
@@ -38,7 +38,7 @@
   ?>  ?=(%finished -.rep)
   ?~  full-file.rep  !!
   =/  body=cord  q.data.u.full-file.rep
-  =/  jon=json  (need (de-json:html body))
+  =/  jon=json  (need (de:json:html body))
   =/  results=(list cord)  (mine-json jon)
   ?~  results  !!
   %-  pure:m
